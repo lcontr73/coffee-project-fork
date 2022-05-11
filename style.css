@@ -45,8 +45,15 @@ h1 {
 }
 .coffee {
     margin: auto;
-}
+    width: 50%;
+    justify-content: center;
 
+
+}
+.coffee p {
+    text-align: center;
+}
 h2 {
   text-align: center;
 }
+
