@@ -51,14 +51,33 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+function addCoffees(e) {
+    e.preventDefault();
+    console.log(e)
+    var addID = coffees.length + 1;
+    var addName = newCoffee.value.toString();
+    var addRoast = newRoast.value.toString();
+    var input = {id: addID, name: addName, roast: addRoast};
+    coffees.push(input);
+    console.log(coffees);
+    tbody.innerHTML = renderCoffees(coffees);
+}
+
+
 var tbody = document.querySelector('#coffees');
+var submitButton2 = document.querySelector('#submit2');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var searchbar = document.querySelector('#search-bar');
 
+var newCoffee = document.querySelector('#addNewCoffee')
+var newRoast = document.querySelector('#newRoastSelection');
+
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+submitButton2.addEventListener('click', addCoffees);
+
 searchbar.addEventListener('keyup', updateCoffees);
 
 
