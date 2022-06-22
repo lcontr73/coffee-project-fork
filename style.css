@@ -4,7 +4,7 @@ table {
 }
 body {
     background-image: url("wallapaper.png");
-
+    font-family: 'Anton', sans-serif;
 }
 td, th {
     border: 1px solid black;
@@ -13,7 +13,7 @@ td, th {
 
 h1 {
     text-align: center;
-    background-image: url("");
+    /*background-image: url("large.png");*/
 }
 
 .container1 {
@@ -70,4 +70,6 @@ h2 {
 hr {
     margin-top: 25px;
 }
-
+#logo {
+    width: 250px;
+}
