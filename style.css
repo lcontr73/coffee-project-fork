@@ -2,7 +2,10 @@ table {
     border-collapse: collapse;
     margin: 15px 0;
 }
+body {
+    background-image: url("wallapaper.png");
 
+}
 td, th {
     border: 1px solid black;
     padding: 5px 10px;
@@ -10,6 +13,7 @@ td, th {
 
 h1 {
     text-align: center;
+    background-image: url("");
 }
 
 .container1 {
@@ -19,12 +23,17 @@ h1 {
 }
 .container2 {
     display: flex;
-
-
 }
+
+
 .container3 {
     margin: 40px;
 
+}
+
+.btn {
+    background-color: saddlebrown;
+    color: white;
 }
 
 .col-8 {
