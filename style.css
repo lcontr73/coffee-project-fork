@@ -34,6 +34,8 @@ h1 {
 .btn {
     background-color: saddlebrown;
     color: white;
+    width: 30%;
+    justify-content: center;
 }
 
 .col-8 {
